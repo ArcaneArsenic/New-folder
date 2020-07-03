@@ -26,8 +26,33 @@ namespace Ksu.Cis300.NameLookup
         /// <param name="min"></param>
         /// <returns></returns>
         private static BinaryTreeNode<KeyValuePair<TKey, TValue>> RemoveMininumKey(BinaryTreeNode<KeyValuePair<TKey, TValue>> t, out KeyValuePair<TKey, TValue> min)
+        {
+            min = t.LeftChild.Data;
+            BinaryTreeNode<KeyValuePair<TKey, TValue>> minB = new BinaryTreeNode<KeyValuePair<min.Key, min.Value>>;
+            //minB.Data = min;
+
+            return minB;
+        }
+        /// <summary>
+        /// how is this different from the one above it?
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="t"></param>
+        /// <param name="removed"></param>
+        /// <returns></returns>
+        private static BinaryTreeNode<KeyValuePair<TKey, TValue>> Remove(TKey key, BinaryTreeNode<KeyValuePair<TKey, TValue>> t, out bool removed)
         { 
         
+        }
+        /// <summary>
+        /// srsly?
+        /// </summary>
+        /// <param name="k"></param>
+        /// <returns></returns>
+        public bool Remove(TKey k)
+        {
+            if (k = null) { return true; }
+            else { return false; }
         }
 
         /// <summary>
